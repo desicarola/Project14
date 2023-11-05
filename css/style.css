@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#header {
+  border: 1px solid #000000; 
+  background-color: #27374D !important;
+  
+}
+
+.nav-item > .nav-link {
+	color: white !important;
+}
+
+.navbar-brand {
+	color: white !important;
+}
+
+.parent {
+  background-color: #DDE6ED;
+}
+.contact{
+  border: 1px solid #000000;  
+  text-align: center; 
+  background-color: #9DB2BF;
+	padding: 2rem; 
+	margin-inline: auto; 
+}
+/* Styles for the Flexi box section container. */
+.hero__container {
+  display: flex;              /* Uses flexbox layout for child items. */
+  align-items: center;        /* Centers child items vertically. */
+  justify-content: space-evenly; /* Distributes child items evenly horizontally. */
+  width: min(100% - 2rem, 1300px); /* Sets the width to 100% minus 2rem or 1300px, whichever is smaller. */
+  min-height: 70vh;           /* Sets the minimum height to 70% of the viewport height. */
+  margin-inline: auto;        /* Centers the container horizontally. */
+  padding: 2rem;              /* Adds padding around the container. */
+  animation: fade-in-right 1.5s forwards; /* Applies an animation named "fade-in-right" that lasts 1.5 seconds. */
+}
+
+/* Styles for the main hero heading. */
+.hero__heading {
+  font-size: 2rem;           /* Sets the font size to 4rem. */
+  max-width: 50ch;           /* Limits the width to 25 characters. */
+  margin-bottom: 2rem;       /* Provides a bottom margin of 2rem. */
+}
+
+/* Styles for the hero subheading. */
+.hero__subheading {
+  font-size: 1rem;        /* Sets the font size to 1.75rem. */
+  max-width: 150ch;           /* Limits the width to 50 characters. */
+}
+
+/* Styles for the buttons container. */
+.hero__buttons {
+  margin-top: 1.5rem;        /* Provides a top margin of 3.5rem. */
+  display: flex;             /* Uses flexbox layout for child items. */
+  gap: 1.5rem;               /* Space between child items. */
+}
+
+/* Shared styles for both buttons. */
+.hero__buttons > button {
+  padding: 0.7rem 2rem;      /* Adds padding around the button. */
+  border-radius: 7px;        /* Rounds the corners of the button. */
+  border: none;              /* Removes the default border. */
+  cursor: pointer;           /* Changes the mouse cursor to a hand when hovering. */
+}
+
+/* Styles specific to the "READ MORE" button. */
+.hero__buttons > .read-more-btn {
+  background: transparent;   /* No background color. */
+  border: 3px solid darkslategray; /* Dark gray border. */
+  color: darkslategray;      /* Dark gray text color. */
+  font-weight: 600;          /* Makes the font semi-bold. */
+  transition: all 300ms ease-in-out; /* Smooth transition for all properties. */
+}
+
+/* Hover effect for the "READ MORE" button. */
+.hero__buttons > .read-more-btn:hover {
+  transform: scale(1.07);    /* Slightly enlarges the button when hovered. */
+  font-weight: 600;          /* Makes the font semi-bold. */
+  transition: all 300ms ease-in-out; /* Smooth transition for all properties. */
+	background:darkslategray;
+	color: white;
+}
+
+/* Styles specific to the "ORDER NOW" button. */
+.hero__buttons > .order-now-btn {
+  background-color: darkslategray; /* Dark gray background color. */
+  font-weight: 600;          /* Makes the font semi-bold. */
+  color: #fff;               /* White text color. */
+  transition: all 300ms ease-in-out; /* Smooth transition for all properties. */
+}
+
+/* Hover effect for the "ORDER NOW" button. */
+.hero__buttons > .order-now-btn:hover {
+  transform: scale(1.07);    /* Slightly enlarges the button when hovered. */
+  transition: all 300ms ease-in-out; /* Smooth transition for all properties. */
+}
+
+/* Styles for the image in the hero section. */
+.hero__image > img {
+  width: 300px;              /* Sets the width to 300 pixels. */
+  height: 425px;             /* Sets the height to 425 pixels. */
+	margin: 1fr;
+}
+
+
+/* Animation for a fade-in effect from the right. */
+@keyframes fade-in-right {
+  0% {                       /* Starting point of the animation. */
+    transform: translateX(-10%); /* Moves the element 10% to the left. */
+    opacity: 0;              /* Fully transparent. */
+  }
+  
+  100% {                     /* Ending point of the animation. */
+    transform: translateX(0);   /* Resets*/
+	}
+}
+#readMore{
+	padding: 4rem;
+}
+
+.hero__text {
+	padding: 2rem;
+}
+.footer{
+  background-color: #27374D !important;
+
+}
+
+/*** Color of top menu ***/
+.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
+}
+
+.navbar-toggler {
+	border-color: #fff;
+}
+
+/***. Slider **/
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.slider {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  margin: 5vh;
+}
+
+.item:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item__content {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 7px;
+}
+
+.item > p {
+  text-align: center;
+  
+}
+
+.left {
+  transform-origin: left center;
+  transform: translateX(-50%);
+}
+
+.right {
+  transform-origin: right center;
+  transform: translateX(50%);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
+/******************************************/
+/*************** Project 11 ***************/
+/******************************************/
+.error-msg {
+  display: none;
+}
+
+#btnSubmit:disabled{
+  background-color: #9DB2BF;
+  border-color: #9DB2BF;
+
+}
+
+#contactSubmitted {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 3px solid #228b22;
+  padding: 0.5rem;
+  text-align: center;
+  color:#228b22;
+  display: none;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/*** Project 14 **/
+#map {
+	width: 600px; 
+	height: 400px;
+  margin-bottom: 1rem;
+}
